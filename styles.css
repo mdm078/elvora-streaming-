@@ -356,3 +356,21 @@ html[data-theme="dark"] .faq details p,html[data-theme="dark"] .legal p,html[dat
 html[data-theme="dark"] .footer{border-color:rgba(255,255,255,.14)}
 html[data-theme="dark"] .ambient-one,html[data-theme="dark"] .ambient-two{background:#7951c8;opacity:.18}
 @media(max-width:800px){html[data-theme="dark"] nav{background:rgba(18,17,31,.96);border-color:rgba(255,255,255,.14)}}
+
+
+/* Cinematic poster-style artwork in website previews */
+.mock-poster{background:radial-gradient(circle at 65% 22%,#f5d38a 0,transparent 20%),linear-gradient(155deg,#273e63,#6c456c 55%,#101321)!important;position:relative;overflow:hidden}
+.mock-poster span{font:700 12px 'Space Grotesk';letter-spacing:1px;text-align:center;text-shadow:0 2px 8px #0008}
+.mock-poster small{font-size:6px;letter-spacing:2px}
+.mock-shelf i{position:relative;overflow:hidden}
+.mock-shelf i:after{content:"CINEMA";position:absolute;left:5px;right:3px;bottom:7px;color:#fff;font:700 6px 'Space Grotesk';letter-spacing:1px;text-shadow:0 1px 5px #000}
+.mock-shelf i:nth-child(2){background:radial-gradient(circle at 60% 25%,#f1c27c 0,transparent 18%),linear-gradient(145deg,#9b6379,#302144 70%)}
+.mock-shelf i:nth-child(3){background:radial-gradient(circle at 40% 28%,#9fe2dc 0,transparent 18%),linear-gradient(145deg,#427f83,#292144 70%)}
+.preview-cards i{position:relative;overflow:hidden}
+.preview-cards i:after{content:"FEATURED FILM";position:absolute;left:7px;right:4px;bottom:8px;color:#fff;font:700 7px 'Space Grotesk';letter-spacing:.8px;text-shadow:0 2px 7px #000}
+.preview-cards i:nth-child(2):after{content:"ANIME"}
+.preview-cards i:nth-child(3):after{content:"SERIES"}
+.preview-cards i{background:radial-gradient(circle at 60% 25%,#f4d28a 0,transparent 18%),linear-gradient(145deg,#7957a7,#202d47)}
+.preview-cards i:nth-child(2){background:radial-gradient(circle at 35% 22%,#fce6a0 0,transparent 18%),linear-gradient(145deg,#4c9390,#24213b)}
+.preview-cards i:nth-child(3){background:radial-gradient(circle at 65% 25%,#d7a0ec 0,transparent 18%),linear-gradient(145deg,#a06c79,#29213e)}
+html[data-theme="dark"] .mock-poster{background:radial-gradient(circle at 65% 22%,#f5d38a 0,transparent 20%),linear-gradient(155deg,#273e63,#6c456c 55%,#101321)!important}
