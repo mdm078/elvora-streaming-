@@ -592,3 +592,6 @@ html[data-theme="light"] .horizon-poster:before{background:linear-gradient(180de
 html[data-theme="light"] .blue-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.9)),radial-gradient(circle at 38% 27%,#fff 0 4%,transparent 24%),linear-gradient(145deg,#aaa,#555 52%,#171717)!important}
 html[data-theme="light"] .archive-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.92)),radial-gradient(circle at 70% 28%,#fff 0 4%,transparent 24%),linear-gradient(145deg,#999,#444 50%,#111)!important}
 html[data-theme="light"] nav{background:rgba(255,255,255,.98)!important;border-color:#ddd!important}
+
+/* Monochrome logo contrast on the light theme */
+html[data-theme="light"] .brand img,html[data-theme="light"] .preview-side img{filter:invert(1)}
