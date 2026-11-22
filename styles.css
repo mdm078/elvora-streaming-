@@ -318,3 +318,41 @@ h1 span,h2 span,.preview-copy h2 span {
 .roadmap-grid .feature-card p{color:#555}
 .roadmap-grid .feature-card .card-index{color:#666}
 @media(max-width:480px){.roadmap-notice{padding:16px}.roadmap-grid .feature-card{min-height:215px}}
+
+
+/* ELVORA theme switch */
+.theme-toggle{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(0,0,0,.14);background:rgba(255,255,255,.72);color:#111;border-radius:24px;padding:10px 14px;font:700 11px 'DM Sans';cursor:pointer;white-space:nowrap;backdrop-filter:blur(16px)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#090912;--panel:#141421;--text:#f6f4ff;--muted:#aaa7bc;--line:rgba(255,255,255,.13)}
+html[data-theme="dark"] body{background:radial-gradient(ellipse at 80% 5%,#24183d 0,transparent 32%),#090912;color:#f6f4ff}
+html[data-theme="dark"] .topbar{background:rgba(15,15,27,.72);border-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] nav{color:#d0cddd}
+html[data-theme="dark"] nav a:hover,html[data-theme="dark"] .footer a:hover{color:#fff}
+html[data-theme="dark"] .nav-cta{background:#fff;color:#111}
+html[data-theme="dark"] .theme-toggle{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
+html[data-theme="dark"] .menu-toggle{color:#fff}
+html[data-theme="dark"] .eyebrow{color:#bba8ff}
+html[data-theme="dark"] .lead,html[data-theme="dark"] .section-heading>p,html[data-theme="dark"] .preview-copy p,html[data-theme="dark"] .download-copy p{color:#aaa7bc}
+html[data-theme="dark"] .secondary{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.18)}
+html[data-theme="dark"] .micro-note,html[data-theme="dark"] .disclaimer{color:#aaa7bc}
+html[data-theme="dark"] .trust-strip{border-color:rgba(255,255,255,.14)}
+html[data-theme="dark"] .trust-strip div,html[data-theme="dark"] .footer>p,html[data-theme="dark"] .footer>small,html[data-theme="dark"] .footer-links{color:#aaa7bc}
+html[data-theme="dark"] .trust-strip b{color:#c5afff}
+html[data-theme="dark"] .roadmap-notice,html[data-theme="dark"] .roadmap-grid .feature-card,html[data-theme="dark"] .release-row{background:rgba(24,23,39,.82);border-color:rgba(255,255,255,.13)}
+html[data-theme="dark"] .roadmap-notice b,html[data-theme="dark"] .roadmap-grid .feature-card h3{color:#f6f4ff}
+html[data-theme="dark"] .roadmap-notice p,html[data-theme="dark"] .roadmap-grid .feature-card p,html[data-theme="dark"] .roadmap-grid .feature-card .card-index{color:#aaa7bc}
+html[data-theme="dark"] .roadmap-pulse{background:#69e5ef;box-shadow:0 0 0 5px rgba(105,229,239,.12)}
+html[data-theme="dark"] .preview-panel{background:linear-gradient(135deg,#241c39,#111622);border-color:rgba(255,255,255,.15)}
+html[data-theme="dark"] .preview-window{background:#0c0d17;border-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] .window-bar{background:#171624}
+html[data-theme="dark"] .window-bar span,html[data-theme="dark"] .preview-side small{color:#aaa7bc}
+html[data-theme="dark"] .preview-side{color:#f6f4ff;border-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] .preview-main>small{color:#bba8ff}
+html[data-theme="dark"] .preview-main h3{color:#f6f4ff}
+html[data-theme="dark"] .preview-main h3 span{color:#bba8ff}
+html[data-theme="dark"] .preview-lines{background:rgba(255,255,255,.15)}
+html[data-theme="dark"] .faq details{border-color:rgba(255,255,255,.15)}
+html[data-theme="dark"] .faq summary:after{color:#fff}
+html[data-theme="dark"] .faq details p,html[data-theme="dark"] .legal p,html[data-theme="dark"] .legal li{color:#aaa7bc}
+html[data-theme="dark"] .footer{border-color:rgba(255,255,255,.14)}
+html[data-theme="dark"] .ambient-one,html[data-theme="dark"] .ambient-two{background:#7951c8;opacity:.18}
+@media(max-width:800px){html[data-theme="dark"] nav{background:rgba(18,17,31,.96);border-color:rgba(255,255,255,.14)}}
