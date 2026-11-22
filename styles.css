@@ -533,3 +533,62 @@ html[data-theme="dark"] .faq details p,html[data-theme="dark"] .legal p,html[dat
 html[data-theme="dark"] .footer{border-color:rgba(255,255,255,.13)}
 html[data-theme="dark"] .theme-toggle{background:#171d22;color:#f7f9fb;border-color:rgba(255,255,255,.18)}
 html[data-theme="dark"] nav{background:rgba(12,15,18,.98);border-color:rgba(255,255,255,.14)}
+
+
+/* ELVORA STRICT MONOCHROME — only black, white and neutral greys */
+:root{--bg:#090909;--panel:#151515;--text:#fff;--muted:#b8b8b8;--purple:#fff;--cyan:#fff;--line:rgba(255,255,255,.16)}
+body{background:#090909!important;color:#fff}
+.ambient-one,.ambient-two{background:#fff!important;opacity:.035!important}
+.eyebrow,.trust-strip b,.roadmap-pulse,.preview-main>small{color:#fff!important}
+h1 span,h2 span,.preview-copy h2 span{background:linear-gradient(90deg,#fff,#aaa)!important;color:transparent;background-clip:text}
+.primary,.nav-cta{background:#fff!important;color:#080808!important;border-color:#fff!important}
+.secondary{background:#171717!important;color:#fff!important;border-color:#555!important}
+.theme-toggle{background:#171717!important;color:#fff!important;border-color:#666!important}
+.feature-card,.roadmap-notice,.roadmap-grid .feature-card,.release-row{background:#151515!important;border-color:#393939!important;box-shadow:none!important}
+.feature-card h3,.roadmap-notice b,.roadmap-grid .feature-card h3{color:#fff!important}
+.feature-card p,.roadmap-notice p,.roadmap-grid .feature-card p,.lead,.section-heading>p,.preview-copy p,.download-copy p{color:#b8b8b8!important}
+.preview-panel{background:linear-gradient(145deg,#222,#101010)!important;border-color:#393939!important}
+.preview-window{background:#101010!important;border-color:#444!important}
+.window-bar{background:#222!important}
+.preview-side{color:#fff!important;border-color:#444!important}
+.preview-lines{background:rgba(255,255,255,.15)!important}
+.showcase-poster:before{filter:grayscale(1)!important}
+.showcase-poster:after{border-color:rgba(255,255,255,.25)!important;box-shadow:inset 0 0 30px rgba(255,255,255,.04),0 0 25px rgba(255,255,255,.04)!important}
+.horizon-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.9)),radial-gradient(ellipse at 68% 32%,#ddd 0 5%,transparent 27%),linear-gradient(145deg,#777,#333 54%,#080808)!important}
+.blue-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.9)),radial-gradient(circle at 38% 27%,#eee 0 4%,transparent 24%),linear-gradient(145deg,#888,#444 52%,#111)!important}
+.archive-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.92)),radial-gradient(circle at 70% 28%,#ddd 0 4%,transparent 24%),linear-gradient(145deg,#777,#383838 50%,#111)!important}
+.poster-label,.poster-meta{color:rgba(255,255,255,.82)!important}
+.faq details{border-color:#444!important}
+.faq details p,.legal p,.legal li{color:#b8b8b8!important}
+.footer{border-color:#333!important}
+html[data-theme="light"]{color-scheme:light;--bg:#fff;--panel:#f7f7f7;--text:#111;--muted:#666;--purple:#111;--cyan:#111;--line:rgba(0,0,0,.14);background:#fff!important;color:#111!important}
+html[data-theme="light"] body{background:#fff!important;color:#111!important}
+html[data-theme="light"] .topbar{background:rgba(255,255,255,.94)!important;border-color:#ddd!important}
+html[data-theme="light"] nav{color:#333!important;background:#fff}
+html[data-theme="light"] nav a:hover,html[data-theme="light"] .footer a:hover{color:#000!important}
+html[data-theme="light"] .nav-cta,html[data-theme="light"] .primary{background:#111!important;color:#fff!important;border-color:#111!important}
+html[data-theme="light"] .menu-toggle{color:#111!important}
+html[data-theme="light"] .eyebrow,html[data-theme="light"] .trust-strip b,html[data-theme="light"] .roadmap-pulse,html[data-theme="light"] .preview-main>small{color:#333!important}
+html[data-theme="light"] h1,html[data-theme="light"] h2,html[data-theme="light"] .feature-card h3,html[data-theme="light"] .preview-main h3{color:#111!important}
+html[data-theme="light"] h1 span,html[data-theme="light"] h2 span,html[data-theme="light"] .preview-copy h2 span{background:linear-gradient(90deg,#111,#777)!important;color:transparent;background-clip:text}
+html[data-theme="light"] .lead,html[data-theme="light"] .section-heading>p,html[data-theme="light"] .preview-copy p,html[data-theme="light"] .download-copy p,html[data-theme="light"] .feature-card p,html[data-theme="light"] .roadmap-notice p,html[data-theme="light"] .roadmap-grid .feature-card p{color:#666!important}
+html[data-theme="light"] .secondary{background:#fff!important;color:#111!important;border-color:#bbb!important}
+html[data-theme="light"] .theme-toggle{background:#fff!important;color:#111!important;border-color:#bbb!important}
+html[data-theme="light"] .feature-card,html[data-theme="light"] .roadmap-notice,html[data-theme="light"] .roadmap-grid .feature-card,html[data-theme="light"] .release-row{background:#f7f7f7!important;border-color:#ddd!important;box-shadow:none!important}
+html[data-theme="light"] .feature-card h3,html[data-theme="light"] .roadmap-notice b,html[data-theme="light"] .roadmap-grid .feature-card h3{color:#111!important}
+html[data-theme="light"] .card-index{color:#777!important}
+html[data-theme="light"] .roadmap-pulse{background:#111!important;box-shadow:0 0 0 5px rgba(0,0,0,.08)!important}
+html[data-theme="light"] .preview-panel{background:#eee!important;border-color:#ddd!important}
+html[data-theme="light"] .preview-window{background:#fff!important;border-color:#ddd!important}
+html[data-theme="light"] .window-bar{background:#eee!important}
+html[data-theme="light"] .preview-side{color:#111!important;border-color:#ddd!important}
+html[data-theme="light"] .preview-lines{background:rgba(0,0,0,.12)!important}
+html[data-theme="light"] .faq details{border-color:#ddd!important}
+html[data-theme="light"] .faq summary:after{color:#111!important}
+html[data-theme="light"] .faq details p,html[data-theme="light"] .legal p,html[data-theme="light"] .legal li{color:#666!important}
+html[data-theme="light"] .footer{border-color:#ddd!important}
+html[data-theme="light"] .showcase-poster:before{filter:grayscale(1)!important}
+html[data-theme="light"] .horizon-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.9)),radial-gradient(ellipse at 68% 32%,#fff 0 5%,transparent 27%),linear-gradient(145deg,#999,#444 54%,#111)!important}
+html[data-theme="light"] .blue-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.9)),radial-gradient(circle at 38% 27%,#fff 0 4%,transparent 24%),linear-gradient(145deg,#aaa,#555 52%,#171717)!important}
+html[data-theme="light"] .archive-poster:before{background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.92)),radial-gradient(circle at 70% 28%,#fff 0 4%,transparent 24%),linear-gradient(145deg,#999,#444 50%,#111)!important}
+html[data-theme="light"] nav{background:rgba(255,255,255,.98)!important;border-color:#ddd!important}
