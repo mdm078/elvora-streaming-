@@ -8,26 +8,38 @@ mainNav?.querySelectorAll('a').forEach(link => link.addEventListener('click', ()
   mainNav.classList.remove('open');
   menuToggle?.setAttribute('aria-expanded', 'false');
 }));
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
 // The download button intentionally remains disabled until a real, tested APK is published.
 
-
+// ELVORA theme preference: default to light and persist the user's choice.
 const themeToggle = document.getElementById('themeToggle');
-const savedTheme = localStorage.getItem('elvora-site-theme');
+const themeStorageKey = 'elvora-site-theme';
+function readSavedTheme() {
+  try { return localStorage.getItem(themeStorageKey); } catch (_) { return null; }
+}
+function saveTheme(theme) {
+  try { localStorage.setItem(themeStorageKey, theme); } catch (_) { /* storage may be unavailable */ }
+}
 function applyTheme(theme) {
-  document.documentElement.dataset.theme = theme;
+  const selected = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = selected;
   if (themeToggle) {
-    const dark = theme === 'dark';
-    themeToggle.innerHTML = dark ? '☀ <span>Light</span>' : '☾ <span>Dark</span>';
+    const dark = selected === 'dark';
+    const icon = themeToggle.querySelector('.theme-icon');
+    const label = themeToggle.querySelector('.theme-label');
+    if (icon) icon.textContent = dark ? '☀' : '☾';
+    if (label) label.textContent = dark ? 'Light' : 'Dark';
     themeToggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    themeToggle.setAttribute('aria-pressed', String(dark));
     themeToggle.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
   }
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#090912' : '#f4f4f4');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', selected === 'dark' ? '#090912' : '#f5f5f7');
 }
-applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+applyTheme(readSavedTheme() || 'light');
 themeToggle?.addEventListener('click', () => {
   const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('elvora-site-theme', next);
   applyTheme(next);
+  saveTheme(next);
 });
