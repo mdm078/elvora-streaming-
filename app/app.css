@@ -28,3 +28,23 @@
 .poster-card b{font:700 clamp(12px,3vw,19px)/.98 'Space Grotesk';letter-spacing:-.5px;text-shadow:0 3px 12px #0008}
 .poster-card small{font-size:6px;letter-spacing:1px;color:#ffffffd9}
 @media(min-width:650px){.poster-grid{gap:14px}.poster-card{padding:18px}.poster-kicker,.poster-card small{font-size:8px}}
+
+
+/* ELVORA app prototype — strict black and white palette */
+:root{color-scheme:light;--bg:#fff;--panel:#f5f5f5;--text:#111;--muted:#666;--line:rgba(0,0,0,.13)}
+:root body{background:#fff!important;color:#111!important}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#090909;--panel:#151515;--text:#fff;--muted:#b8b8b8;--line:rgba(255,255,255,.15);background:#090909!important;color:#fff!important}
+:root[data-theme="dark"] body{background:#090909!important;color:#fff!important}
+:root[data-theme="dark"] .topbar,:root[data-theme="dark"] .bottom-nav{background:rgba(12,12,12,.96)!important;border-color:#333!important}
+:root[data-theme="dark"] .brand,:root[data-theme="dark"] .welcome h1,:root[data-theme="dark"] .page-title h1,:root[data-theme="dark"] .section-head h2,:root[data-theme="dark"] .title-info b,:root[data-theme="dark"] .settings-list b{color:#fff!important}
+:root[data-theme="dark"] .eyebrow{color:#ddd!important}
+:root[data-theme="dark"] .search,:root[data-theme="dark"] .categories button,:root[data-theme="dark"] .quick-grid button,:root[data-theme="dark"] .notice,:root[data-theme="dark"] .addon-card,:root[data-theme="dark"] .profile-card,:root[data-theme="dark"] .settings-list,:root[data-theme="dark"] .title-item{background:#151515!important;border-color:#383838!important;color:#fff!important}
+:root[data-theme="dark"] .search input{color:#fff!important}
+:root[data-theme="dark"] .notice p,:root[data-theme="dark"] .addon-card p,:root[data-theme="dark"] .title-info p,:root[data-theme="dark"] .quick-grid small,:root[data-theme="dark"] .settings-list span{color:#b8b8b8!important}
+:root[data-theme="dark"] .filters button,:root[data-theme="dark"] .library-tabs button,:root[data-theme="dark"] .save-btn{background:#222!important;color:#fff!important;border-color:#444!important}
+:root[data-theme="dark"] .filters button.selected,:root[data-theme="dark"] .library-tabs button.selected{background:#fff!important;color:#111!important}
+:root[data-theme="dark"] .bottom-nav button{color:#aaa!important}
+:root[data-theme="dark"] .bottom-nav button.active{color:#fff!important}
+:root[data-theme="dark"] .bottom-nav button.active span{background:#fff!important;color:#111!important}
+.poster-one:before,.poster-two:before,.poster-three:before{background:linear-gradient(145deg,#888,#444 55%,#111)!important}
+:root[data-theme="light"] .poster-one:before,:root[data-theme="light"] .poster-two:before,:root[data-theme="light"] .poster-three:before{background:linear-gradient(145deg,#aaa,#555 55%,#171717)!important}
