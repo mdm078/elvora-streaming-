@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f2f2f2"><meta name="description" content="ELVORA STREAMING app prototype">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="app.css">
+<title>ELVORA STREAMING — App</title>
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><a class="brand" href="#home" aria-label="ELVORA STREAMING"><span class="brand-mark">ES</span><span>ELVORA <b>STREAMING</b></span></a><button class="avatar" id="profileShortcut" aria-label="Open profile">M</button></header>
+<main>
+<section class="view active" id="home">
+<div class="welcome"><p class="eyebrow">YOUR ENTERTAINMENT SPACE</p><h1>Discover your<br><span>next favourite.</span></h1><p class="muted">A home for the stories you love.</p></div>
+<label class="search"><span>⌕</span><input id="homeSearch" type="search" placeholder="Search movies, series, anime…" autocomplete="off"></label>
+<div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>Browse categories</h2></div></div>
+<div class="categories"><button data-category="Movies">Movies</button><button data-category="Series">Series</button><button data-category="Anime">Anime</button><button data-category="Documentary">Documentary</button></div>
+<div class="section-head"><div><p class="eyebrow">YOUR SPACE</p><h2>Quick access</h2></div></div>
+<div class="quick-grid"><button data-view="discover"><span>⌕</span><b>Discover</b><small>Explore titles</small></button><button data-view="library"><span>▤</span><b>My Library</b><small>Your saved list</small></button><button data-view="addons"><span>⌘</span><b>Add-on Center</b><small>Extend your app</small></button><button data-view="profile"><span>◎</span><b>Profiles</b><small>Personal settings</small></button></div>
+<div class="notice"><span>✦</span><div><b>Early app preview</b><p>This prototype uses sample catalogue entries. Playback and live content sources are not connected yet.</p></div></div>
+</section>
+<section class="view" id="discover"><div class="page-title"><p class="eyebrow">FIND SOMETHING GREAT</p><h1>Discover</h1><p class="muted">Explore the catalogue experience.</p></div><label class="search"><span>⌕</span><input id="discoverSearch" type="search" placeholder="Search the sample catalogue…"></label><div class="filters"><button class="selected" data-filter="All">All</button><button data-filter="Movie">Movies</button><button data-filter="Series">Series</button><button data-filter="Anime">Anime</button></div><div class="title-list" id="titleList"></div><p class="footnote">Sample titles are placeholders for interface testing, not a playable or licensed catalogue.</p></section>
+<section class="view" id="library"><div class="page-title"><p class="eyebrow">KEEP IT CLOSE</p><h1>My Library</h1><p class="muted">Your watchlist and saved titles in one place.</p></div><div class="library-tabs"><button class="selected" data-library="watchlist">Watchlist</button><button data-library="favorites">Favorites</button></div><div id="libraryList" class="title-list empty-state">Your saved titles will appear here.</div></section>
+<section class="view" id="addons"><div class="page-title"><p class="eyebrow">MAKE IT YOURS</p><h1>Add-on Center</h1><p class="muted">Optional extensions, with safety and source transparency at the centre.</p></div><div class="notice"><span>⌘</span><div><b>Add-ons are not available yet</b><p>We will add an approved-source directory, permission details, compatibility checks, and update controls before enabling installation.</p></div></div><div class="addon-card"><b>Source verification</b><p>Only sources that pass review and have a clear legal basis should be listed.</p></div><div class="addon-card"><b>Permission transparency</b><p>Each add-on should explain what data and device permissions it needs.</p></div><div class="addon-card"><b>Independent providers</b><p>Third-party add-ons may be operated independently from ELVORA STREAMING.</p></div></section>
+<section class="view" id="profile"><div class="page-title"><p class="eyebrow">YOUR SETTINGS</p><h1>Profile</h1><p class="muted">Personalize your ELVORA experience.</p></div><div class="profile-card"><div class="profile-avatar">M</div><div><b>My Profile</b><p class="muted">Local preview profile</p></div></div><div class="settings-list"><div><b>Multiple profiles</b><span>Planned</span></div><div><b>Smart recommendations</b><span>Planned</span></div><div><b>Parental controls</b><span>Planned</span></div><div><b>Watch Party</b><span>Future update</span></div><div><b>App version</b><span>Prototype 0.1</span></div></div></section>
+</main>
+<nav class="bottom-nav" aria-label="Main navigation"><button class="active" data-view="home"><span>⌂</span>Home</button><button data-view="discover"><span>⌕</span>Discover</button><button data-view="library"><span>▤</span>Library</button><button data-view="addons"><span>⌘</span>Add-ons</button><button data-view="profile"><span>◎</span>Profile</button></nav>
+</div><script src="app.js"></script>
+</body></html>
