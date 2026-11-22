@@ -299,3 +299,22 @@ h1 span,h2 span,.preview-copy h2 span {
 
 .preview-lines { background: rgba(0,0,0,.12); }
 
+
+
+/* ELVORA STREAMING — hybrid roadmap */
+.roadmap-notice{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:19px 21px;margin:0 0 18px;
+  border:1px solid rgba(0,0,0,.13);border-radius:16px;
+  background:rgba(255,255,255,.58);
+  box-shadow:0 10px 30px rgba(0,0,0,.045);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)
+}
+.roadmap-notice>b,.roadmap-notice b{display:block;font:700 14px 'Space Grotesk';color:#111;margin:0 0 5px}
+.roadmap-notice p{margin:0;color:#666;font-size:12px;line-height:1.65}
+.roadmap-pulse{width:9px;height:9px;flex:0 0 9px;border-radius:50%;margin-top:5px;background:#111;box-shadow:0 0 0 5px rgba(0,0,0,.07)}
+.roadmap-grid .feature-card{min-height:225px}
+.roadmap-grid .feature-card h3{color:#111}
+.roadmap-grid .feature-card p{color:#555}
+.roadmap-grid .feature-card .card-index{color:#666}
+@media(max-width:480px){.roadmap-notice{padding:16px}.roadmap-grid .feature-card{min-height:215px}}
